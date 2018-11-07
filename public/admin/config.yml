@@ -30,7 +30,7 @@ collections:
         label: "Category Lists"
         widget: "list"
         required: false
-        field:
+        fields:
           - label: "Nested Relation Try"
             name: "category"
             widget: "relation"
@@ -42,5 +42,3 @@ collections:
               - "title"
               - "description"
             valueField: "title"
-  
-
