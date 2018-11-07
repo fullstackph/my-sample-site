@@ -6,8 +6,6 @@ thumbnail: /uploads/image2.jpg
 rating: '5'
 categories:
   - category: Category B
-  - category: Category A
-  - category: 'aasdasd asd ad asd '
 ---
 This is sample post #1.
 
