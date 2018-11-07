@@ -6,6 +6,13 @@ media_folder: "public/uploads" # Media files will be stored in the repo under pu
 public_folder: "/uploads" # Folder path where uploaded files will be accessed, relative to the base of the built site
 
 collections:
+  - name: "category"
+    label: "Categories"
+    folder: "src/categories"
+    create: true
+    fields: 
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Desc", name: "description", widget: "string"}
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
@@ -19,27 +26,21 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
-      - label: "Nested Relation Try"
-        name: "simpleRel"
-        widget: "relation"
-        collection: "category"
-        searchFields: ["title"]
-        valueField: "title"
-      - name: "relcat"
+      - name: "categories"
         label: "Category Lists"
         widget: "list"
         required: false
-        fields:
+        field:
           - label: "Nested Relation Try"
-            name: "relcatitem"
+            name: "category"
             widget: "relation"
             collection: "category"
-            searchFields: ["title"]
+            searchFields:
+              - "title"
+              - "description"
+            displayFields: 
+              - "title"
+              - "description"
             valueField: "title"
-  - name: "category"
-    label: "Categories"
-    folder: "src/categories"
-    create: true
-    fields: 
-      - {label: "Title", name: "title", widget: "string"}
+  
 
