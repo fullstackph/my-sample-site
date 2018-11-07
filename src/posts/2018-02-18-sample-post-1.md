@@ -4,6 +4,9 @@ title: 'Sample Post #1'
 date: 2018-02-19T00:45:43.212Z
 thumbnail: /uploads/image2.jpg
 rating: '5'
+categories:
+  - category: Category B
+  - category: Category A
 ---
 This is sample post #1.
 
