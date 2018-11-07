@@ -1,5 +1,5 @@
 ---
-title: B
-description: letter B
+title: Category B
+description: This is the description for cat B
 ---
 

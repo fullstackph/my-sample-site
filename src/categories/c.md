@@ -1,5 +1,5 @@
 ---
-title: C
-description: letter C
+title: Category C
+description: This is the description for cat C
 ---
 
