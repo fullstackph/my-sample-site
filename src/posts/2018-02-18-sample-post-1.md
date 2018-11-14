@@ -3,7 +3,7 @@ layout: blog
 title: 'Sample Post #1'
 date: 2018-02-19T00:45:43.212Z
 thumbnail: /uploads/image2.jpg
-rating: '4'
+rating: '5'
 categories:
   - category: Category B
 ---
